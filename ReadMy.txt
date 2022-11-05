@@ -9,4 +9,80 @@ http://localhost:8880/
 
  как в файле src/main/resources/application.properties
 
- 
+ СТРУКТУРА ПРОЕКТА в IntelliJ IDE
+
+ mvnw и mvnw.cmd – это сценарии-обертки Maven, эти сценарии
+ можно использовать для создания нового проекта, даже если на
+ вашем компьютере не установлен Maven;
+
+        /home/alex/Hardy/Spring/taco-cloud/pom.xml
+  – это параметры сборки Maven, вскоре мы рассмотрим ее поближе;
+
+        src/main/java/tacos/TacoCloudApplication.java
+ – это основной класс Spring Boot, который запускает проект, вскоре мы уделим ему наше внимание;
+
+        src/main/resources/application.properties
+ – это файл, изначально пустой, используется для определения конфигурационных свойств. Мы не будемИнициализация
+ приложения Spring особенно углубляться в него в данной главе, но подробно обсу-
+ дим в главе 6;
+
+        src/main/resources/static
+ – в эту папку можно поместить любой статический контент (изображения, таблицы стилей, JavaScript и т. д.), который
+ должен  отображаться в браузере. Изначально в этой папке ничего нет;
+
+        src/main/resources/templates
+  – тут мы разместим файлы шаблонов, используемые для отображения контента в браузере. Изначально в этой папке
+ ничего нет, но скоро мы добавим в нее шаблон Thymeleaf;
+
+src/test/java/tacos/HomeControllerTest.java – это простой тестовый класс,  проверяющий успех загрузки контекста
+ приложения Spring. Мы будем добавлять в него дополнительные тесты по мере разработки приложения.
+
+
+
+Аннотация  @SpringBootApplication в файле -
+ src/main/java/tacos/TacoCloudApplication.java
+ @SpringBootApplication – это составная аннотация, объединяющая  три другие аннотации:
+ -- @SpringBootConfiguration – определяет этот класс как класс кон-
+ фигурации. В данный момент в этом классе не определяется
+ никаких конфигурационных параметров, но если понадобится,
+ в него можно добавить настройки Spring Framework. Эта аннота-
+ ция, по сути, является специализированной формой аннотации
+ @Configuration;
+ -- @EnableAutoConfiguration – включает автоконфигурацию Spring
+ Boot. Подробнее об автоконфигурации мы поговорим позже,
+ а пока просто имейте в виду, что эта аннотация сообщает Spring
+ Boot о необходимости автоматически настраивать любые ком-
+ поненты, которые могут вам понадобиться;
+ --@ComponentScan – включает сканирование компонентов. Меха-
+ низм сканирования позволяет объявлять другие классы с анно-
+ тациями, такими как @Component, @Controller и @Service, чтобы
+ фреймворк Spring автоматически обнаруживал и регистрировал
+ их как компоненты в контексте приложения Spring.
+
+
+ Аннотация @SpringBootTest в файле
+ src/test/java/tacos/HomeControllerTest.java
+ настраивает JUnit на запуск теста с под-
+ держкой возможностей Spring Boot. Подобно @SpringBootApplication,
+ @SpringBootTest – это составная аннотация, которая сама снабжена
+ аннотацией @ExtendWith(SpringExtension.class), добавляющей под-
+ держку возможностей тестирования Spring в JUnit 5.
+
+ ГЛАВА 2 ст 57
+ Добавляем Lombok
+     <dependency>
+         <groupId>org.projectlombok</groupId>
+         <artifactId>lombok</artifactId>
+     </dependency>
+
+ Инструкции по установке Lombok в вашу IDE вы  найдете по адресу https://projectlombok.org/.
+
+
+ ГЛАВА 2 ст 62
+ Логирование
+ private static final org.slf4j.Logger log =
+    org.slf4j.LoggerFactory.getLogger(DesignTacoController.class);
+
+
+  ГЛАВА 2 ст 68
+    http://localhost:8880/design
