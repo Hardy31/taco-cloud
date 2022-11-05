@@ -1,0 +1,12 @@
+Для запуска
+в тул бар выбираем  src/main/java/tacos/TacoCloudApplication.java
+нажимаем  зеленую кнопочку.
+Перед этим не забываем собрать проект!
+
+и в командной строке браузера набираем
+http://localhost:8880/
+ ПОРТ 8880!
+
+ как в файле src/main/resources/application.properties
+
+ 
