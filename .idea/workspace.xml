@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba2e5ca-21ef-4715-a703-11f2fb70175a" name="Changes" comment="">
+    <list default="true" id="5ba2e5ca-21ef-4715-a703-11f2fb70175a" name="Changes" comment="added validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/Taco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/TacoOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/web/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/web/DesignTacoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/web/IngredientByIdConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/web/IngredientByIdConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -115,5 +119,9 @@
       <updated>1667635547476</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added validation" />
   </component>
 </project>

@@ -86,3 +86,14 @@ src/test/java/tacos/HomeControllerTest.java – это простой тесто
 
   ГЛАВА 2 ст 68
     http://localhost:8880/design
+
+    Кредитные карты для тестирования
+    https://www.kobzarev.com/other/testoviye-nomera-kreditnyh-kart/
+    4222222222222
+
+
+    Для подключения H2
+    Обращаем внимание на порт!
+
+    http://localhost:8880/h2-console
+
