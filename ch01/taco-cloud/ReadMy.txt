@@ -1,0 +1,57 @@
+Проект был создан  с помощь Spring Initializr
+  https://start.spring.io/.
+
+ Скриншот в  файле:
+ x-description/images/01_spring_initializer.png
+
+
+
+ Далее создал Git repository  "taco-cloud"
+
+
+…or create a new repository on the command line
+echo "# taco-cloud" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Hardy31/taco-cloud.git
+git push -u origin main
+
+
+
+
+В помощь   Гайды по Спрингу:
+https://spring.io/guides
+
+
+А так же ссылка на исходный  Git:
+https://github.com/habuma/spring-in-action-6-samples
+
+Он выполнен с помощью модульной структуры:
+Почитать можно здесь:
+https://spring.io/guides/gs/multi-module
+
+
+
+
+
+Test:
+При попытке запустить тест  выдаст ошибку:
+C:\Users\Administrator\Documents\java + InteligIDEA\taco-cloud\ch01\taco-cloud\src\main\java\tacos\TacoCloudApplication.java:3:32
+java: cannot access org.springframework.boot.SpringApplication
+  bad class file: /C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar!/org/springframework/boot/SpringApplication.class
+    class file has wrong version 61.0, should be 55.0
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+
+Решение:
+
+Понизить верситю Spring Boot c 3.2.2 - рекомендованная Initializer  до версии в книге
+<!--		<version>3.2.2</version>-->
+		<version>2.5.6</version>
+
+
+Страница 40 книги Spring в действии 6 издание.
+
+
+
