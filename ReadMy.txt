@@ -1,0 +1,36 @@
+Проект был создан  с помощь Spring Initializr
+  https://start.spring.io/.
+
+ Скриншот в  файле:
+ x-description/images/01_spring_initializer.png
+
+
+
+ Далее создал Git repository  "taco-cloud"
+
+
+…or create a new repository on the command line
+echo "# taco-cloud" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Hardy31/taco-cloud.git
+git push -u origin main
+
+
+
+
+В помощь   Гайды по Спрингу:
+https://spring.io/guides
+
+
+А так же ссылка на исходный  Git:
+https://github.com/habuma/spring-in-action-6-samples
+
+Он выполнен с помощью модульной структуры:
+Почитать можно здесь:
+https://spring.io/guides/gs/multi-module
+
+
+
